@@ -1,0 +1,1 @@
+console.log("Hello this is the node application that will start Stock Tracker.");
