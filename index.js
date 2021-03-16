@@ -9,4 +9,4 @@ const tracker = new Tracker(1);
 
 setInterval(() => {
     tracker.mainLoop();
-}, 2000)
+}, 2000);

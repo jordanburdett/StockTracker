@@ -15,6 +15,7 @@ class Tracker {
     { siteName: "newegg", amountOfWorkers: 0 },
   ];
   numberOfChecks = 0;
+  notifiedList = [{sku: "asdfasdf", time: 12341234234}]
 
   constructor(totalThreads = 1) {
     this.totalThreads = totalThreads;
@@ -22,6 +23,7 @@ class Tracker {
 
   mainLoop() {
     // check number of threads and if we can attempt to make another
+    console.log("number of checks: " + this.numberOfChecks);
     if (this.currentNumOfThreads >= this.totalThreads) {
       return;
     }
@@ -57,7 +59,7 @@ class Tracker {
     // bestbuy(); -- this function may not work.. import confusing with require... want es6:)
 
     if (worker.siteName === "bestbuy") {
-        const found = await bestbuy();
+        const found = await bestbuy(this.notifiedList);
 
         worker.amountOfWorkers--;
         this.currentNumOfThreads--;
