@@ -1,0 +1,24 @@
+{
+  "name": "stocktracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanburdett/StockTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanburdett/StockTracker/issues"
+  },
+  "homepage": "https://github.com/jordanburdett/StockTracker#readme",
+  "dependencies": {
+    "bestbuy": "^2.4.1",
+    "open": "^8.0.2",
+    "pushover-notifications": "^1.2.2"
+  }
+}
